@@ -6,95 +6,121 @@
     <title>SAZHA KITCHEN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Chango&family=Cookie&family=Freckle+Face&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Freckle+Face&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-        <nav class="nav 1">
-            <ul class="info">
-                <li>
-                    <button class="btn btn-bahasa" id="bhs">Bahasa</button>
-                    <span class="slider"></span>
-                    <span>Indonesia</span>
-                    <span>Inggris</span>
-                </li>
-                <li><a href="#">🔎Pesanan saya</a></li>
-                <li><a href="#">📞Hubungi</a></li>
-                <li><a href="#">🗂️Gallery</a></li>
-                <li><a href="#">📱Mobile app</a></li>
-                
-            </ul>
-            <ul class="bahasa">
-                <span></span>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">DAFTAR</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="header 2">
-        <nav class="nav 2">
-            <div class="logo">
+    <nav class="nav atas">
+        <ul class="info">
+            <li class="join bahasa">
+                <span><a href="indo" class="bag pesanan">Indonesia</a></span>
+                <span hidden><a href="inggris"></a>Inggris</span>
+            </li>
+            <li class="join pesanan">
+                <a href="#" class="bag pesanan" id="pesanan">
+                    <i data-feather="shopping-bag"></i>
+                    Tracking Pesanan 
+                </a>
+            </li>
+            <li class="join hubungi">
+                <a href="#" class="bag pesanan" id="hubungi">
+                    <i data-feather="phone"></i>
+                    Hubungi
+                </a>
+            </li>
+            <li class="join galeri">
+                <a href="#" class="bag pesanan" id="galeri">
+                    <i data-feather="image"></i>
+                    Galeri
+                </a>
+            </li>
+            <li class="join mobile">
+                <a href="#" class="bag pesanan" id="mobile">
+                    <i data-feather="smartphone"></i>
+                    Mobile app
+                </a>
+            </li>
+            <li class="join login">
+                <a href="#" class="bag lohin" id="login">
+                    <i data-feather="log-in"></i>
+                    Login
+                </a>
+            </li>
+            <li class="join daftar">
+                <a href="#" class="bag daftar"id="daftar">
+                    <i data-feather="user"></i>
+                    Daftar
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="nav bawah">
+        <div class="logo">
+            <div class="bagian-logo">
                 <img src="#" alt="logosazha">
                 <h3>SAZHA kitchen</h3>
             </div>
             <div>
                 <input type="search" name="cari" id="cari" placeholder="Cari Produk ..." required>
-                <label for="cari">🔍︎</label>
+                <label for="cari"><i data-feather="search"></i></label>
             </div>
             <div>
-                <button class="btn btn-troli" id="troli">🛒</button>
+                <button class="btn btn-troli" id="troli"><i data-feather="shopping-cart"></i></button>
             </div>
-        </nav>
-    </header>
+            <button class="btn btn-menu" id="menu">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
 
     <main>
         <div>
-             <h1>Kenikmatan yang tiada ada habisnya ....</h1>
+            <h1>Kenikmatan yang tiada ada habisnya ....</h1>
         </div>
         <div class="grid">
-            <div class="grid-card">
-                <div class="card-produk">
-                    <div class="produk dendeng">
-                        <div class="potoproduk">
-                            <img src="#" alt="dendeng">
-                        </div>
-                        <div class="judul-produk">
-                            <h2>Dendeng Lombok Balado</h2>
-                            <h6 style="text-decoration: line-through;">Rp.60.000</h6>
-                            <h4>Rp.55.000</h4>
-                        </div>
-                        <div class="pesan">
-                            <button class="btn btn-keranjang">🛒</button>
-                            <button class="btn btn-pesan">🛍️</button>
-                        </div>
+            <div class="card-produk">
+                <div class="produk dendeng">
+                    <div class="potoproduk">
+                        <img src="#" alt="dendeng">
                     </div>
-                    <div class="produk cumi">
-                        <div class="potoproduk">
-                            <img src="#" alt="cumi">
-                        </div>
-                        <div class="judul-produk">
-                            <h2>Cumi Mercon</h2>
-                            <h6 style="text-decoration: line-through;">Rp.50.000</h6>
-                            <h4>Rp.45.000</h4>
-                        </div>
-                        <div class="pesan">
-                            <button class="btn btn-keranjang">🛒</button>
-                            <button class="btn btn-pesan">🛍️</button>
-                        </div>
+                    <div class="judul-produk">
+                        <h2>Dendeng Lombok Balado</h2>
+                        <h6 style="text-decoration: line-through;">Rp.60.000</h6>
+                        <h4>Rp.55.000</h4>
                     </div>
-                    <div class="produk paru">
-                        <div class="potoproduk">
-                            <img src="#" alt="paru">
-                        </div>
-                        <div class="judul-produk">
-                            <h2>Paru Oseng Balado</h2>
-                            <h6 style="text-decoration: line-through;">Rp.50.000</h6>
-                            <h4>Rp.45.000</h4>
-                        </div>
-                        <div class="pesan">
-                            <button class="btn btn-keranjang">🛒</button>
-                            <button class="btn btn-pesan">🛍️</button>
-                        </div>
+                    <div class="pesan">
+                        <button class="btn btn-keranjang"><i data-feather="shopping-cart"></i></button>
+                        <button class="btn btn-pesan"><i data-feather="shopping-bag"></i></button>
+                    </div>
+                </div>
+                <div class="produk cumi">
+                    <div class="potoproduk">
+                        <img src="#" alt="cumi">
+                    </div>
+                    <div class="judul-produk">
+                        <h2>Cumi Mercon</h2>
+                        <h6 style="text-decoration: line-through;">Rp.50.000</h6>
+                        <h4>Rp.45.000</h4>
+                    </div>
+                    <div class="pesan">
+                        <button class="btn btn-keranjang"><i data-feather="shopping-cart"></i></button>
+                        <button class="btn btn-pesan"><i data-feather="shopping-bag"></i></button>
+                    </div>
+                </div>
+                <div class="produk paru">
+                    <div class="potoproduk">
+                        <img src="#" alt="paru">
+                    </div>
+                    <div class="judul-produk">
+                        <h2>Paru Oseng Balado</h2>
+                        <h6 style="text-decoration: line-through;">Rp.50.000</h6>
+                        <h4>Rp.45.000</h4>
+                    </div>
+                    <div class="pesan">
+                        <button class="btn btn-keranjang"><i data-feather="shopping-cart"></i></button>
+                        <button class="btn btn-pesan"><i data-feather="shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -105,9 +131,9 @@
         <hr>
         All Reversed Right.
     </footer>
-
-
-
-
+    
+    <script>
+      feather.replace();
+    </script>
 </body>
 </html>
