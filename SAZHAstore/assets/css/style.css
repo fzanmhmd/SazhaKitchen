@@ -1,26 +1,116 @@
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    color: black;
 }
 
 body{
-    font-family: "Andika";
-    font-size: 1rem;
-    min-height: 100vh;
-    background-color: rgb(196, 141, 196);
+    background-color: antiquewhite;
+    font-family: "Poppins";
 }
 
-header{
-    display: flex;
-    justify-content: flex-end;
+.btn-menu{
+    display:none;
 }
 
 nav{
-  display: flex;
-  justify-content: flex-end;
+    width: 100%;
 }
 
-button,a,label{
-    cursor: pointer;
+.info{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+    font-size: 0.8rem; 
 }
+
+.join svg {
+    width: 14px;
+    height: 14px;
+}
+
+.join{
+    display: flex;
+    align-items: center;
+}
+
+
+.bag{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.join + .join {
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:680px){
+    .nav.bawah{
+        display: flex;
+        width: 100%;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-menu{
+        display: contents;
+       
+    }
+    .batas{
+        display: none;
+    }
+    .nav.atas{
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        width: 100%;
+        transition: 0.2s;
+        font-size: 3rem;
+    }
+
+    .nav.atas :active{
+        position: absolute;
+        top: 0px;
+    }
+
+    .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 5px 1%;
+    background-color: aliceblue;
+    font-size: 0.8rem;
+    weigth: 100hv; 
+    }
+
+
+
+}
+
+
