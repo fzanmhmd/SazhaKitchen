@@ -346,21 +346,53 @@ ul {
     border: 1px solid rgba(46, 20, 32, 0.05);
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+.hero-subtitle {
+    display: block;
+    font-family: 'Overused Grotesk', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: var(--primary-orange);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-.hero-content p {
+.hero-title {
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    color: var(--secondary-brown);
+}
+
+.hero-desc {
     font-size: 1.15rem;
     color: var(--text-muted);
-    margin-bottom: 40px;
-    max-width: 90%;
+    max-width: 550px;
+    margin: 0 auto 45px auto;
+    line-height: 1.8;
 }
 
-.hero-content .cta-group {
+.cta-group {
+    justify-content: center;
     display: flex;
-    gap: 16px;
+    gap: 20px;
+}
+
+.btn-hero {
+    padding: 15px 40px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-outline-brown {
+    background-color: transparent;
+    border: 2px solid var(--secondary-brown);
+    color: var(--secondary-brown);
+}
+
+.btn-outline-brown:hover {
+    background-color: var(--secondary-brown);
+    color: var(--white);
 }
 
 .hero-visual {
@@ -827,17 +859,22 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .section-padding { padding: 60px 0; }
+    .section-title { font-size: 2rem; }
+    
     .hamburger { display: flex; }
     
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: 80px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 80px);
         background: var(--surface);
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        gap: 20px;
         transition: 0.4s ease-in-out;
     }
     
@@ -845,7 +882,12 @@ ul {
         left: 0;
     }
     
-    .hero-content h1 { font-size: 2.2rem; }
+    .hero-title { font-size: 2.8rem; }
+    .hero-subtitle { font-size: 0.75rem; letter-spacing: 2px; }
+    .hero-desc { font-size: 1rem; margin-bottom: 30px; }
+    
+    .cta-group { flex-direction: column; gap: 15px; }
+    .btn-hero { padding: 12px 30px; width: 100%; }
     
     .bento-grid { grid-template-columns: 1fr; }
     .card-large { grid-column: span 1; }
