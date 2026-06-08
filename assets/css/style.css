@@ -396,9 +396,10 @@ ul {
 }
 
 .btn-hero {
-    padding: 15px 40px;
-    font-size: 1rem;
+    padding: 12px 32px;
+    font-size: 0.95rem;
     letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 .btn-outline-brown {
@@ -916,8 +917,8 @@ ul {
     .hero-desc { font-size: 0.95rem; margin-bottom: 30px; }
     
     /* Buttons */
-    .cta-group { flex-direction: column; gap: 12px; }
-    .btn-hero { padding: 12px 20px; width: 100%; font-size: 0.9rem; }
+    .cta-group { flex-direction: column; gap: 10px; }
+    .btn-hero { padding: 10px 20px; width: 100%; font-size: 0.85rem; font-weight: 500; }
     .btn { font-size: 0.9rem; padding: 12px 24px; }
     
     /* Swipeable Flex Carousels */
